@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FM onboarding test app</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #12151a;
+        color: #e6e8eb;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      main {
+        text-align: center;
+      }
+      #state {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 0.5rem 0;
+      }
+      .on {
+        color: #4ade80;
+      }
+      .off {
+        color: #f87171;
+      }
+      code {
+        background: #1f242c;
+        padding: 0.15rem 0.4rem;
+        border-radius: 4px;
+      }
+      #log {
+        margin-top: 2rem;
+        text-align: left;
+        font-family: ui-monospace, monospace;
+        font-size: 0.8rem;
+        color: #9aa4b2;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Flag <code id="flag-key">…</code> is</p>
+      <div id="state">…</div>
+      <p id="hint">Toggle it in the CloudBees dashboard, this updates on its own.</p>
+      <div id="log"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
